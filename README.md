@@ -7,9 +7,9 @@ Desenvolver um Agente de IA Consultivo capaz de auxiliar clientes e parceiros da
 O agente deve fornecer informações precisas e direcionadas, utilizando como base o portfólio de produtos do site oficial da Intelbras e os cursos de capacitação disponíveis no portal Intelbras Itec.
 
 ✨ Tecnologias
-Linguagem de Programação: Java 21
+Linguagem de Programação: Java 25
 
-Modelo de IA/Framework: (A ser definido, ex: Google Gemini API, OpenAI, frameworks de IA em Java como Deeplearning4j ou integração com serviços cloud)
+Modelo de IA/Framework:  OpenAI, Java (Spring Boot)
 
 Serviço: Aplicação backend rodando em Java.
 
@@ -25,7 +25,7 @@ Corpo da Requisição (JSON Exemplo):
 JSON
 
 {
-"mensagem": "Quero aprender a configurar câmeras de segurança e escolher o melhor gravador de vídeo da Intelbras."
+"pergunta": "Quero aprender a configurar câmeras de segurança e escolher o melhor gravador de vídeo da Intelbras."
 }
 
 🧠 Escopo de Conhecimento (Fontes de Dados)
