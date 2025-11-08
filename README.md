@@ -18,7 +18,7 @@ O agente será acessível através de um endpoint HTTP POST.
 
 Método: POST
 
-URL: http://localhost:8080/chatbot
+URL: http://localhost:8080/api/intelbras
 
 Corpo da Requisição (JSON Exemplo):
 
