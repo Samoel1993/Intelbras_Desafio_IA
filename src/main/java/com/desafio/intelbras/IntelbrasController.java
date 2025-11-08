@@ -1,19 +1,22 @@
 package com.desafio.intelbras;
 
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/chatbot")
+@RequestMapping("/api/intelbras")
 public class IntelbrasController {
 
-    private final IntelbrasChatGPTService chatService;
+    private final IntelbrasGeminiService geminiService;
 
-    public IntelbrasController(IntelbrasChatGPTService chatService) {
-        this.chatService = chatService;
+    public IntelbrasController(IntelbrasGeminiService geminiService) {
+        this.geminiService = geminiService;
     }
 
     @PostMapping
-    public String conversar(@RequestBody String pergunta) {
-        return chatService.processarPergunta(pergunta);
+    public ResponseEntity<String> processarPergunta(@RequestBody PromptRequest request) {
+        String resposta = geminiService.processarPergunta(request.pergunta());
+        return ResponseEntity.ok(resposta);
     }
 }
