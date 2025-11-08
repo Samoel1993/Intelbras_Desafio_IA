@@ -1,0 +1,16 @@
+[theme]
+
+# Cor principal (verde Intelbras)
+primaryColor="#009040"
+
+# Fundo principal (o escuro que você já usa)
+backgroundColor="#0F1116"
+
+# Cor de fundo secundária (caixas, etc)
+secondaryBackgroundColor="#2E3039"
+
+# Cor do texto
+textColor="#FAFAFA"
+
+# Fonte
+font="sans serif"

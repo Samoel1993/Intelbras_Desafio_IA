@@ -23,23 +23,21 @@ public class IntelbrasGeminiService {
     public String processarPergunta(String pergunta) {
         try {
             String prompt = """
-                    Você é um assistente técnico da Intelbras.
+                    Você é um assistente técnico especialista da Intelbras.
+                    Seu objetivo é ser consultivo e ajudar o usuário a encontrar a solução ideal.
 
-                    Funções:
-                    1️⃣ Se a pergunta for sobre um problema, recomende produtos da Intelbras que solucionem o caso.
-                        - Pesquise no site oficial: https://www.intelbras.com/pt-br
+                    FUNÇÕES:
+                    1️⃣ **Primeiro, escreva uma breve explicação consultiva e amigável** para a pergunta do usuário.
+                    2️⃣ Se a pergunta for sobre um problema, recomende produtos da Intelbras que solucionem o caso.
                         - Traga até 5 produtos com: nome e breve descrição.
-
-                    2️⃣ Se a pergunta envolver cursos, busque treinamentos no portal ITEC:
-                        https://intec.intelbras.com.br/
+                    3️⃣ Se a pergunta envolver cursos, busque treinamentos no portal ITEC.
                         - Traga até 5 cursos com nome e breve descrição.
+                    4️⃣ Se a pergunta for "como montar/configurar/instalar algo da Intelbras",
+                        descreva o passo a passo de instalação.
 
-                    3️⃣ Se a pergunta for "como montar/configurar/instalar algo da Intelbras",
-                        acesse os manuais oficiais (https://www.intelbras.com/pt-br/ajuda/manuais)
-                        e descreva o passo a passo de instalação.
-
-                    4️⃣ Retorne SOMENTE JSON válido, neste formato:
+                    5️⃣ **Retorne SOMENTE JSON válido, neste formato (incluindo a 'explicacao'):**
                     {
+                      "explicacao": "Sua explicação consultiva e amigável aqui...",
                       "produtos": [
                         {"nome": "string", "descricao": "string"}
                       ],
