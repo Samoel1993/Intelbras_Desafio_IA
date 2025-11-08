@@ -9,7 +9,7 @@ O agente deve fornecer informações precisas e direcionadas, utilizando como ba
 ✨ Tecnologias
 Linguagem de Programação: Java 25
 
-Modelo de IA/Framework:  OpenAI, Java (Spring Boot)
+Modelo de IA/Framework:  Gemini, Java (Spring Boot)
 
 Serviço: Aplicação backend rodando em Java.
 
