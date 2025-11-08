@@ -25,8 +25,16 @@ Corpo da Requisição (JSON Exemplo):
 JSON
 
 {
-"pergunta": "Quero aprender a configurar câmeras de segurança e escolher o melhor gravador de vídeo da Intelbras."
+  "pergunta": "Quais câmeras Intelbras são recomendadas para uso residencial?"
 }
+{
+  "pergunta": "Como configurar a câmera Intelbras VIP 3230 D?"
+}
+
+{
+  "pergunta": "Quais cursos de CFTV a Intelbras oferece no portal Intec?"
+}
+
 
 🧠 Escopo de Conhecimento (Fontes de Dados)
 O agente deve ser treinado ou ter acesso às informações das seguintes fontes para formular suas respostas:
